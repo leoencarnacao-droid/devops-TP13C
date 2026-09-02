@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 240
+exclude = .venv
+extend-ignore = E302,E701,E702,W391
