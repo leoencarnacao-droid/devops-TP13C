@@ -1,4 +1,4 @@
-# TP13C - Notes App con Docker Compose y OWASP ZAP
+# TP15 - Notes App con Semgrep como SAST
 
 ## Objetivo
 
@@ -12,6 +12,7 @@ Desplegar una aplicación web contenerizada compuesta por frontend, backend y ba
 - Docker Compose
 - OWASP ZAP
 - GitHub
+* Semgrep (SAST)
 
 ## Estructura del proyecto
 
@@ -83,7 +84,22 @@ Archivos relacionados:
 ```text
 .zap/
 verificar-zap.sh
+
 ```
+
+## Analisis SAST con Semgrep
+
+Se integró Semgrep como herramienta SAST (Static Application Security Testing)
+para analizar automáticamente el código fuente y los archivos de configuración
+del proyecto.
+
+La herramienta fue ejecutada localmente y posteriormente incorporada al
+pipeline de GitHub Actions para que cada push o pull request ejecute
+validaciones automáticas de seguridad.
+
+Archivo generado:
+
+- semgrep-results.json
 
 ## Repositorio GitHub
 
